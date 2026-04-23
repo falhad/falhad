@@ -64,6 +64,8 @@ jobs:
           template: classic
           base: header
           config_timezone: Asia/Muscat
+          # 960px so the isocalendar has room to lay out horizontally.
+          config_display: large
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
           output_action: none

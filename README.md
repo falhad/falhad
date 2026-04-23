@@ -103,24 +103,24 @@ I'm a **Senior Software Engineer with 15+ years of experience** designing and op
 
 ## 📈 Deep Metrics · Refreshed Daily
 
-> Every card below is regenerated **every day at 00:00 UTC** by a [GitHub Action](.github/workflows/metrics.yml) using [`lowlighter/metrics`](https://github.com/lowlighter/metrics).
+> Regenerated **every day at 00:00 UTC** by a [GitHub Action](.github/workflows/metrics.yml) using [`lowlighter/metrics`](https://github.com/lowlighter/metrics).
 
-### 📌 Profile Overview
+<table>
+  <tr>
+    <td align="center" valign="top" width="50%">
+      <h3>📌 Profile Overview</h3>
+      <img src="./metrics/overview.svg" alt="Activity, community, repositories, follow-up ratio, lines of code, notable contributions, recent stars"/>
+    </td>
+    <td align="center" valign="top" width="50%">
+      <h3>💬 Language Breakdown</h3>
+      <img src="./metrics/languages.svg" alt="In-depth language breakdown and starred topic icons"/>
+    </td>
+  </tr>
+</table>
 
+<h3 align="center">🗓️ Contribution Calendar</h3>
 <p align="center">
-  <img src="./metrics/overview.svg" width="100%" alt="Profile overview: activity, community, repositories, follow-up ratio, achievements, lines of code, notable contributions"/>
-</p>
-
-### 🗓️ Contribution Calendar
-
-<p align="center">
-  <img src="./metrics/calendar.svg" width="100%" alt="Isometric full-year contribution calendar"/>
-</p>
-
-### 💬 Language Breakdown
-
-<p align="center">
-  <img src="./metrics/languages.svg" width="100%" alt="In-depth language breakdown and topic icons"/>
+  <img src="./metrics/calendar.svg" alt="Isometric full-year contribution calendar"/>
 </p>
 
 ---
