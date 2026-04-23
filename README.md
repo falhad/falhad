@@ -123,12 +123,6 @@ I'm a **Senior Software Engineer with 15+ years of experience** designing and op
   <img src="./metrics/languages.svg" width="100%" alt="In-depth language breakdown and topic icons"/>
 </p>
 
-### ⏰ Coding Habits
-
-<p align="center">
-  <img src="./metrics/habits.svg" width="100%" alt="Coding habits: time-of-day, weekday patterns, preferred languages"/>
-</p>
-
 ---
 
 ## 📜 Certifications

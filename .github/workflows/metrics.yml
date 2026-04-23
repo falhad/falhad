@@ -26,7 +26,12 @@ jobs:
 
       # ────────────────────────────────────────────────────────────────
       # 1) Profile overview — header, activity, community, repositories,
-      #    follow-up ratio, achievements, lines of code, notable contribs.
+      #    follow-up ratio, lines of code, notable contributions, stars.
+      #
+      # NOTE: plugin_achievements is intentionally disabled — upstream
+      # v3.34 still queries the "Projects (classic)" GraphQL field which
+      # GitHub deprecated (2024-05-23), causing the plugin to crash and
+      # embed an error message in the SVG.
       # ────────────────────────────────────────────────────────────────
       - name: Profile overview
         uses: lowlighter/metrics@latest
@@ -37,17 +42,14 @@ jobs:
           template: classic
           base: header, activity, community, repositories, metadata
           config_timezone: Asia/Muscat
-          plugin_achievements: yes
-          plugin_achievements_threshold: C
-          plugin_achievements_secrets: yes
-          plugin_achievements_display: detailed
-          plugin_achievements_limit: 0
           plugin_followup: yes
           plugin_followup_sections: repositories, user
           plugin_lines: yes
           plugin_lines_sections: base
           plugin_notable: yes
           plugin_notable_types: commit, pull_request, issue
+          plugin_stars: yes
+          plugin_stars_limit: 4
           output_action: none
 
       # ────────────────────────────────────────────────────────────────
@@ -67,7 +69,7 @@ jobs:
           output_action: none
 
       # ────────────────────────────────────────────────────────────────
-      # 3) Language breakdown (in-depth) + topic icons.
+      # 3) Language breakdown (in-depth) + starred topic icons.
       # ────────────────────────────────────────────────────────────────
       - name: Language breakdown
         uses: lowlighter/metrics@latest
@@ -90,23 +92,15 @@ jobs:
           output_action: none
 
       # ────────────────────────────────────────────────────────────────
-      # 4) Coding habits — time-of-day, weekday, preferred languages.
+      # With output_action: none, the metrics Docker container writes
+      # the SVGs to /metrics_renders/ (a host-mounted volume owned by
+      # root), not into the repo workspace. Copy them in before commit.
       # ────────────────────────────────────────────────────────────────
-      - name: Coding habits
-        uses: lowlighter/metrics@latest
-        with:
-          filename: metrics/habits.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          user: falhad
-          template: classic
-          base: header
-          config_timezone: Asia/Muscat
-          plugin_habits: yes
-          plugin_habits_from: 200
-          plugin_habits_days: 14
-          plugin_habits_facts: yes
-          plugin_habits_charts: yes
-          output_action: none
+      - name: Copy generated metrics into workspace
+        run: |
+          sudo cp -r /metrics_renders/metrics ./
+          sudo chown -R "$(id -u):$(id -g)" ./metrics
+          ls -la ./metrics
 
       # ────────────────────────────────────────────────────────────────
       # Commit all generated SVGs in a single commit to keep history clean.
