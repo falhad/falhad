@@ -99,11 +99,21 @@ I'm a **Senior Software Engineer with 15+ years of experience** designing and op
   <tr>
     <td align="center" valign="top" width="50%">
       <h3>📌 Profile Overview</h3>
-      <img src="./metrics/overview.svg" alt="Activity, community, repositories, follow-up ratio, lines of code, notable contributions, recent stars"/>
+      <img src="./metrics/overview.svg" alt="Activity, community, repositories, follow-up ratio, lines of code, recent stars"/>
     </td>
     <td align="center" valign="top" width="50%">
       <h3>💬 Language Breakdown</h3>
       <img src="./metrics/languages.svg" alt="In-depth language breakdown and starred topic icons"/>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="top" width="50%">
+      <h3>🌟 Notable Contributions</h3>
+      <img src="./metrics/notable.svg" alt="Commits, pull requests, and issues authored in other repositories"/>
+    </td>
+    <td align="center" valign="top" width="50%">
+      <h3>💡 Stack Overflow</h3>
+      <img src="./metrics/stackoverflow.svg" alt="Top Stack Overflow answers and questions"/>
     </td>
   </tr>
 </table>

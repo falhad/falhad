@@ -26,12 +26,13 @@ jobs:
 
       # ────────────────────────────────────────────────────────────────
       # 1) Profile overview — header, activity, community, repositories,
-      #    follow-up ratio, lines of code, notable contributions, stars.
+      #    follow-up ratio, lines of code, recent stars.
       #
       # NOTE: plugin_achievements is intentionally disabled — upstream
       # v3.34 still queries the "Projects (classic)" GraphQL field which
       # GitHub deprecated (2024-05-23), causing the plugin to crash and
-      # embed an error message in the SVG.
+      # embed an error message in the SVG. plugin_notable is hoisted to
+      # its own card below.
       # ────────────────────────────────────────────────────────────────
       - name: Profile overview
         uses: lowlighter/metrics@latest
@@ -46,8 +47,6 @@ jobs:
           plugin_followup_sections: repositories, user
           plugin_lines: yes
           plugin_lines_sections: base
-          plugin_notable: yes
-          plugin_notable_types: commit, pull_request, issue
           plugin_stars: yes
           plugin_stars_limit: 4
           output_action: none
@@ -91,6 +90,46 @@ jobs:
           plugin_topics: yes
           plugin_topics_mode: icons
           plugin_topics_limit: 15
+          output_action: none
+
+      # ────────────────────────────────────────────────────────────────
+      # 4) Notable contributions — commits, PRs, and issues authored
+      #    in other people's repositories. Indepth mode adds per-repo
+      #    breakdown.
+      # ────────────────────────────────────────────────────────────────
+      - name: Notable contributions
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics/notable.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: falhad
+          template: classic
+          base: header
+          config_timezone: Asia/Muscat
+          plugin_notable: yes
+          plugin_notable_indepth: yes
+          plugin_notable_types: commit, pull_request, issue
+          plugin_notable_repositories: yes
+          output_action: none
+
+      # ────────────────────────────────────────────────────────────────
+      # 5) Stack Overflow — top answers and questions.
+      # ────────────────────────────────────────────────────────────────
+      - name: Stack Overflow
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics/stackoverflow.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: falhad
+          template: classic
+          base: header
+          config_timezone: Asia/Muscat
+          plugin_stackoverflow: yes
+          plugin_stackoverflow_user: 3917083
+          plugin_stackoverflow_sections: answers-top, questions-top
+          plugin_stackoverflow_limit: 4
+          plugin_stackoverflow_lines: 2
+          plugin_stackoverflow_lines_snippet: yes
           output_action: none
 
       # ────────────────────────────────────────────────────────────────
