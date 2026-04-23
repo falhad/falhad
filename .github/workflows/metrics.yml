@@ -1,7 +1,7 @@
 name: GitHub Metrics
 
 on:
-  # Run every day at 00:00 UTC
+  # Run every day at 00:00 UTC (04:00 Asia/Muscat)
   schedule:
     - cron: "0 0 * * *"
   # Run on demand from the Actions tab
@@ -21,65 +21,104 @@ jobs:
     name: Generate GitHub metrics
     runs-on: ubuntu-latest
     steps:
-      - name: Generate full profile metrics
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      # ────────────────────────────────────────────────────────────────
+      # 1) Profile overview — header, activity, community, repositories,
+      #    follow-up ratio, achievements, lines of code, notable contribs.
+      # ────────────────────────────────────────────────────────────────
+      - name: Profile overview
         uses: lowlighter/metrics@latest
         with:
-          filename: github-metrics.svg
+          filename: metrics/overview.svg
           token: ${{ secrets.METRICS_TOKEN }}
           user: falhad
           template: classic
           base: header, activity, community, repositories, metadata
           config_timezone: Asia/Muscat
-          config_order: base.header, isocalendar, languages, activity, community, repositories, followup, habits, achievements, notable, stars
-
-          # Languages breakdown (in-depth, not just the default surface-level view)
-          plugin_languages: yes
-          plugin_languages_indepth: yes
-          plugin_languages_limit: 8
-          plugin_languages_details: bytes-size, percentage
-          plugin_languages_sections: most-used
-          plugin_languages_analysis_timeout: 15
-
-          # Isometric 3D contribution calendar (full year)
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: full-year
-
-          # Coding habits (time of day, weekday patterns, preferred languages)
-          plugin_habits: yes
-          plugin_habits_from: 200
-          plugin_habits_days: 14
-          plugin_habits_facts: yes
-          plugin_habits_charts: yes
-
-          # Unlocked achievements (like GitHub badges)
           plugin_achievements: yes
           plugin_achievements_threshold: C
           plugin_achievements_secrets: yes
           plugin_achievements_display: detailed
           plugin_achievements_limit: 0
-
-          # Follow-up ratio (open/closed issues & PRs)
           plugin_followup: yes
           plugin_followup_sections: repositories, user
-
-          # Lines of code contributed across repos
           plugin_lines: yes
           plugin_lines_sections: base
-          plugin_lines_repositories_limit: 4
-
-          # Notable contributions (commits/PRs/issues in others' repos)
           plugin_notable: yes
           plugin_notable_types: commit, pull_request, issue
+          output_action: none
 
-          # Topics (as icons)
+      # ────────────────────────────────────────────────────────────────
+      # 2) Isometric contribution calendar (full year).
+      # ────────────────────────────────────────────────────────────────
+      - name: Contribution calendar (isometric, full-year)
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics/calendar.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: falhad
+          template: classic
+          base: header
+          config_timezone: Asia/Muscat
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+          output_action: none
+
+      # ────────────────────────────────────────────────────────────────
+      # 3) Language breakdown (in-depth) + topic icons.
+      # ────────────────────────────────────────────────────────────────
+      - name: Language breakdown
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics/languages.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: falhad
+          template: classic
+          base: header
+          config_timezone: Asia/Muscat
+          plugin_languages: yes
+          plugin_languages_indepth: yes
+          plugin_languages_limit: 10
+          plugin_languages_details: bytes-size, percentage
+          plugin_languages_sections: most-used
+          plugin_languages_analysis_timeout: 15
           plugin_topics: yes
           plugin_topics_mode: icons
           plugin_topics_limit: 15
+          output_action: none
 
-          # Recently starred repos
-          plugin_stars: yes
-          plugin_stars_limit: 4
+      # ────────────────────────────────────────────────────────────────
+      # 4) Coding habits — time-of-day, weekday, preferred languages.
+      # ────────────────────────────────────────────────────────────────
+      - name: Coding habits
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics/habits.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: falhad
+          template: classic
+          base: header
+          config_timezone: Asia/Muscat
+          plugin_habits: yes
+          plugin_habits_from: 200
+          plugin_habits_days: 14
+          plugin_habits_facts: yes
+          plugin_habits_charts: yes
+          output_action: none
 
-          # Commit metadata for the auto-commit that publishes the SVG
-          committer_message: "chore(metrics): refresh GitHub profile metrics"
-          committer_branch: main
+      # ────────────────────────────────────────────────────────────────
+      # Commit all generated SVGs in a single commit to keep history clean.
+      # ────────────────────────────────────────────────────────────────
+      - name: Commit generated metrics
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add metrics/
+          if git diff --staged --quiet; then
+            echo "No metrics changes to commit."
+          else
+            git commit -m "chore(metrics): refresh GitHub profile metrics"
+            git push
+          fi

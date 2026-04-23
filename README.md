@@ -1,3 +1,10 @@
+<!--
+  ╔══════════════════════════════════════════════════════════════╗
+  ║           Farhad Navayazdan · GitHub Profile README          ║
+  ║      Deep metrics regenerated daily via GitHub Actions.      ║
+  ╚══════════════════════════════════════════════════════════════╝
+-->
+
 <div align="center">
 
 # Farhad Navayazdan
@@ -26,46 +33,37 @@ I'm a **Senior Software Engineer with 15+ years of experience** designing and op
 
 ## 🧠 Tech Stack
 
-<details open>
-<summary><b>Languages & Frameworks</b></summary>
-<br>
-
-![Rust](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white)
-![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=openjdk&logoColor=white)
-![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-
-</details>
-
-<details open>
-<summary><b>Systems · DevOps · Cloud</b></summary>
-<br>
-
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![Networking](https://img.shields.io/badge/Networking-1BA0D7?style=for-the-badge&logo=cisco&logoColor=white)
-
-</details>
-
-<details open>
-<summary><b>AI & Intelligent Systems</b></summary>
-<br>
-
-![LLM Integration](https://img.shields.io/badge/LLM_Integration-412991?style=for-the-badge&logo=openai&logoColor=white)
-![AI Agents](https://img.shields.io/badge/AI_Agents-4B0082?style=for-the-badge)
-![Automation](https://img.shields.io/badge/Intelligent_Automation-483D8B?style=for-the-badge)
-
-</details>
-
-<details open>
-<summary><b>Architecture & Specialized Domains</b></summary>
-<br>
-
-![Distributed Systems](https://img.shields.io/badge/Distributed_Systems-2F4F4F?style=for-the-badge)
-![System Design](https://img.shields.io/badge/System_Design-4B0082?style=for-the-badge)
-![Blockchain](https://img.shields.io/badge/Blockchain-121D33?style=for-the-badge&logo=blockchaindotcom&logoColor=white)
-
-</details>
+<table>
+  <tr>
+    <td valign="top" width="50%">
+      <h3>Languages &amp; Frameworks</h3>
+      <img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white" alt="Rust"/>
+      <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java"/>
+      <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring&logoColor=white" alt="Spring Boot"/>
+      <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React"/>
+    </td>
+    <td valign="top" width="50%">
+      <h3>Systems · DevOps · Cloud</h3>
+      <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker"/>
+      <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux"/>
+      <img src="https://img.shields.io/badge/Networking-1BA0D7?style=for-the-badge&logo=cisco&logoColor=white" alt="Networking"/>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" width="50%">
+      <h3>AI &amp; Intelligent Systems</h3>
+      <img src="https://img.shields.io/badge/LLM_Integration-412991?style=for-the-badge&logo=openai&logoColor=white" alt="LLM Integration"/>
+      <img src="https://img.shields.io/badge/AI_Agents-4B0082?style=for-the-badge" alt="AI Agents"/>
+      <img src="https://img.shields.io/badge/Intelligent_Automation-483D8B?style=for-the-badge" alt="Intelligent Automation"/>
+    </td>
+    <td valign="top" width="50%">
+      <h3>Architecture &amp; Domains</h3>
+      <img src="https://img.shields.io/badge/Distributed_Systems-2F4F4F?style=for-the-badge" alt="Distributed Systems"/>
+      <img src="https://img.shields.io/badge/System_Design-4B0082?style=for-the-badge" alt="System Design"/>
+      <img src="https://img.shields.io/badge/Blockchain-121D33?style=for-the-badge&logo=blockchaindotcom&logoColor=white" alt="Blockchain"/>
+    </td>
+  </tr>
+</table>
 
 ---
 
@@ -78,7 +76,7 @@ I'm a **Senior Software Engineer with 15+ years of experience** designing and op
 
 ---
 
-## 📊 GitHub Stats
+## 📊 GitHub at a Glance
 
 <div align="center">
 
@@ -93,19 +91,43 @@ I'm a **Senior Software Engineer with 15+ years of experience** designing and op
   <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=falhad&layout=compact&hide_border=true&theme=tokyonight&title_color=7aa2f7&langs_count=8" alt="Top Languages"/>
 </a>
 
+<br/><br/>
+
 <a href="https://github.com/falhad">
   <img src="https://github-profile-trophy.vercel.app/?username=falhad&theme=tokyonight&no-frame=true&no-bg=true&column=7&margin-w=10" alt="GitHub Trophies"/>
 </a>
 
 </div>
 
-### 📈 Daily-Refreshed Deep Metrics
+---
 
-Regenerated every day by a [GitHub Action](.github/workflows/metrics.yml) — isometric contribution calendar, language breakdown, coding habits, achievements, and more.
+## 📈 Deep Metrics · Refreshed Daily
 
-<div align="center">
-  <img src="./github-metrics.svg" alt="GitHub Metrics"/>
-</div>
+> Every card below is regenerated **every day at 00:00 UTC** by a [GitHub Action](.github/workflows/metrics.yml) using [`lowlighter/metrics`](https://github.com/lowlighter/metrics).
+
+### 📌 Profile Overview
+
+<p align="center">
+  <img src="./metrics/overview.svg" width="100%" alt="Profile overview: activity, community, repositories, follow-up ratio, achievements, lines of code, notable contributions"/>
+</p>
+
+### 🗓️ Contribution Calendar
+
+<p align="center">
+  <img src="./metrics/calendar.svg" width="100%" alt="Isometric full-year contribution calendar"/>
+</p>
+
+### 💬 Language Breakdown
+
+<p align="center">
+  <img src="./metrics/languages.svg" width="100%" alt="In-depth language breakdown and topic icons"/>
+</p>
+
+### ⏰ Coding Habits
+
+<p align="center">
+  <img src="./metrics/habits.svg" width="100%" alt="Coding habits: time-of-day, weekday patterns, preferred languages"/>
+</p>
 
 ---
 
@@ -122,9 +144,11 @@ Regenerated every day by a [GitHub Action](.github/workflows/metrics.yml) — is
 
 If you're working on **backend engineering, Rust, distributed systems, or practical AI integration** — I'd love to hear from you.
 
-- 📫 **Email** — [cs.arcxx@gmail.com](mailto:cs.arcxx@gmail.com)
-- 💼 **LinkedIn** — [linkedin.com/in/farhadnava](https://www.linkedin.com/in/farhadnava/)
-- 🧵 **Stack Overflow** — [Farhad Navayazdan](https://stackoverflow.com/users/3917083/farhad-navayazdan)
+| | |
+|---|---|
+| 📫 **Email**       | [cs.arcxx@gmail.com](mailto:cs.arcxx@gmail.com) |
+| 💼 **LinkedIn**    | [linkedin.com/in/farhadnava](https://www.linkedin.com/in/farhadnava/) |
+| 🧵 **Stack Overflow** | [Farhad Navayazdan](https://stackoverflow.com/users/3917083/farhad-navayazdan) |
 
 ---
 
