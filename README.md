@@ -116,6 +116,12 @@ I'm a **Senior Software Engineer with 15+ years of experience** designing and op
       <img src="./metrics/stackoverflow.svg" alt="Top Stack Overflow answers and questions"/>
     </td>
   </tr>
+  <tr>
+    <td colspan="2" align="center" valign="top">
+      <h3>🎮 Steam</h3>
+      <img src="./metrics/steam.svg" alt="Steam player summary, most-played and recently-played games, and unlocked achievements"/>
+    </td>
+  </tr>
 </table>
 
 <h3 align="center">🗓️ Contribution Calendar</h3>
