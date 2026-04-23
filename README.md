@@ -81,20 +81,10 @@ I'm a **Senior Software Engineer with 15+ years of experience** designing and op
 <div align="center">
 
 <a href="https://github.com/falhad">
-  <img height="180" src="https://github-readme-stats.vercel.app/api?username=falhad&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&theme=tokyonight&icon_color=7aa2f7&title_color=7aa2f7" alt="GitHub Stats"/>
+  <img height="180" src="https://streak-stats.demolab.com?user=falhad&hide_border=true&theme=tokyonight&stroke=7aa2f7&ring=7aa2f7&fire=bb9af7&currStreakLabel=7aa2f7" alt="GitHub Streak"/>
 </a>
-<a href="https://github.com/falhad">
-  <img height="180" src="https://github-readme-streak-stats.herokuapp.com?user=falhad&hide_border=true&theme=tokyonight&stroke=7aa2f7&ring=7aa2f7&fire=bb9af7&currStreakLabel=7aa2f7" alt="GitHub Streak"/>
-</a>
-
 <a href="https://github.com/falhad">
   <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=falhad&layout=compact&hide_border=true&theme=tokyonight&title_color=7aa2f7&langs_count=8" alt="Top Languages"/>
-</a>
-
-<br/><br/>
-
-<a href="https://github.com/falhad">
-  <img src="https://github-profile-trophy.vercel.app/?username=falhad&theme=tokyonight&no-frame=true&no-bg=true&column=7&margin-w=10" alt="GitHub Trophies"/>
 </a>
 
 </div>
