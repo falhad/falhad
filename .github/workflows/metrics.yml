@@ -1,0 +1,85 @@
+name: GitHub Metrics
+
+on:
+  # Run every day at 00:00 UTC
+  schedule:
+    - cron: "0 0 * * *"
+  # Run on demand from the Actions tab
+  workflow_dispatch:
+  # Regenerate when the workflow itself changes
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/metrics.yml
+
+permissions:
+  contents: write
+
+jobs:
+  metrics:
+    name: Generate GitHub metrics
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate full profile metrics
+        uses: lowlighter/metrics@latest
+        with:
+          filename: github-metrics.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: falhad
+          template: classic
+          base: header, activity, community, repositories, metadata
+          config_timezone: Asia/Muscat
+          config_order: base.header, isocalendar, languages, activity, community, repositories, followup, habits, achievements, notable, stars
+
+          # Languages breakdown (in-depth, not just the default surface-level view)
+          plugin_languages: yes
+          plugin_languages_indepth: yes
+          plugin_languages_limit: 8
+          plugin_languages_details: bytes-size, percentage
+          plugin_languages_sections: most-used
+          plugin_languages_analysis_timeout: 15
+
+          # Isometric 3D contribution calendar (full year)
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+
+          # Coding habits (time of day, weekday patterns, preferred languages)
+          plugin_habits: yes
+          plugin_habits_from: 200
+          plugin_habits_days: 14
+          plugin_habits_facts: yes
+          plugin_habits_charts: yes
+
+          # Unlocked achievements (like GitHub badges)
+          plugin_achievements: yes
+          plugin_achievements_threshold: C
+          plugin_achievements_secrets: yes
+          plugin_achievements_display: detailed
+          plugin_achievements_limit: 0
+
+          # Follow-up ratio (open/closed issues & PRs)
+          plugin_followup: yes
+          plugin_followup_sections: repositories, user
+
+          # Lines of code contributed across repos
+          plugin_lines: yes
+          plugin_lines_sections: base
+          plugin_lines_repositories_limit: 4
+
+          # Notable contributions (commits/PRs/issues in others' repos)
+          plugin_notable: yes
+          plugin_notable_types: commit, pull_request, issue
+
+          # Topics (as icons)
+          plugin_topics: yes
+          plugin_topics_mode: icons
+          plugin_topics_limit: 15
+
+          # Recently starred repos
+          plugin_stars: yes
+          plugin_stars_limit: 4
+
+          # Commit metadata for the auto-commit that publishes the SVG
+          committer_message: "chore(metrics): refresh GitHub profile metrics"
+          committer_branch: main
