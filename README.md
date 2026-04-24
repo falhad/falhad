@@ -114,16 +114,6 @@ Innovative **Senior Software Developer with 14+ years of experience** delivering
     </td>
   </tr>
   <tr>
-    <td width="50%" valign="top" align="center">
-      <b>⏱️ Coding Habits</b><br/><br/>
-      <img src="./metrics/habits.svg" alt="Coding habits" width="100%"/>
-    </td>
-    <td width="50%" valign="top" align="center">
-      <b>🏃 Recent Activity</b><br/><br/>
-      <img src="./metrics/activity.svg" alt="Recent activity" width="100%"/>
-    </td>
-  </tr>
-  <tr>
     <td colspan="2" align="center">
       <b>🗓️ Contribution Calendar</b><br/><br/>
       <img src="./metrics/calendar.svg" alt="Isometric full-year contribution calendar" width="100%"/>
