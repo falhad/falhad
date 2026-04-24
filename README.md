@@ -98,21 +98,6 @@ Innovative **Senior Software Developer with 14+ years of experience** delivering
 
 ---
 
-## 📊 GitHub at a Glance
-
-<div align="center">
-
-<a href="https://github.com/falhad">
-  <img height="180" src="https://streak-stats.demolab.com?user=falhad&hide_border=true&theme=tokyonight&stroke=7aa2f7&ring=7aa2f7&fire=bb9af7&currStreakLabel=7aa2f7" alt="GitHub Streak"/>
-</a>
-<a href="https://github.com/falhad">
-  <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=falhad&layout=compact&hide_border=true&theme=tokyonight&title_color=7aa2f7&langs_count=8" alt="Top Languages"/>
-</a>
-
-</div>
-
----
-
 ## 📈 Deep Metrics · Refreshed Daily
 
 > Regenerated **every day at 00:00 UTC** by a [GitHub Action](.github/workflows/metrics.yml) using [`lowlighter/metrics`](https://github.com/lowlighter/metrics).

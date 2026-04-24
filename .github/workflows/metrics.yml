@@ -107,8 +107,6 @@ jobs:
           base: header
           config_timezone: Asia/Muscat
           plugin_notable: yes
-          plugin_notable_indepth: yes
-          plugin_notable_types: commit, pull_request, issue
           plugin_notable_repositories: yes
           output_action: none
 
@@ -139,6 +137,7 @@ jobs:
       # ────────────────────────────────────────────────────────────────
       - name: Steam
         uses: lowlighter/metrics@latest
+        continue-on-error: true
         with:
           filename: metrics/steam.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -149,11 +148,10 @@ jobs:
           plugin_steam: yes
           plugin_steam_token: ${{ secrets.STEAM_TOKEN }}
           plugin_steam_user: 76561198133902444
-          plugin_steam_sections: player, most-played, recently-played, achievements
+          plugin_steam_sections: player, most-played, recently-played
           plugin_steam_games_limit: 5
           plugin_steam_recent_games_limit: 2
-          plugin_steam_achievements_limit: 2
-          plugin_steam_playtime_threshold: 10
+          plugin_steam_playtime_threshold: 2
           output_action: none
 
       # ────────────────────────────────────────────────────────────────
