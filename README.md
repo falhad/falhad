@@ -108,10 +108,8 @@ Innovative **Senior Software Developer with 14+ years of experience** delivering
 <h3>💬 Language Breakdown</h3>
 <img src="./metrics/languages.svg" alt="In-depth language breakdown and starred topic icons" width="70%"/>
 
-<h3 align="center">🗓️ Contribution Calendar</h3>
-<p align="center">
-  <img src="./metrics/calendar.svg" alt="Isometric full-year contribution calendar"/>
-</p>
+<h3>🗓️ Contribution Calendar</h3>
+<img src="./metrics/calendar.svg" alt="Isometric full-year contribution calendar" width="70%"/>
 
 ---
 
