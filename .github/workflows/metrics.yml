@@ -80,6 +80,61 @@ jobs:
           output_action: none
 
       # ────────────────────────────────────────────────────────────────
+      # 4) Coding habits — peak hours, active days, commit frequency.
+      # ────────────────────────────────────────────────────────────────
+      - name: Coding habits
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics/habits.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: falhad
+          template: classic
+          base: ""
+          config_timezone: Asia/Muscat
+          plugin_habits: yes
+          plugin_habits_from: 200
+          plugin_habits_days: 14
+          plugin_habits_facts: yes
+          plugin_habits_charts: yes
+          plugin_habits_charts_type: graph
+          output_action: none
+
+      # ────────────────────────────────────────────────────────────────
+      # 5) Recent activity — commits, PRs, issues, reviews.
+      # ────────────────────────────────────────────────────────────────
+      - name: Recent activity
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics/activity.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: falhad
+          template: classic
+          base: ""
+          config_timezone: Asia/Muscat
+          plugin_activity: yes
+          plugin_activity_limit: 10
+          plugin_activity_load: 300
+          plugin_activity_days: 14
+          plugin_activity_filter: all
+          output_action: none
+
+      # ────────────────────────────────────────────────────────────────
+      # 6) Lines of code — total lines added and removed across repos.
+      # ────────────────────────────────────────────────────────────────
+      - name: Lines of code
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics/lines.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: falhad
+          template: classic
+          base: repositories
+          config_timezone: Asia/Muscat
+          plugin_lines: yes
+          plugin_lines_sections: base
+          output_action: none
+
+      # ────────────────────────────────────────────────────────────────
       # With output_action: none, the metrics Docker container writes
       # the SVGs to /metrics_renders/ (a host-mounted volume owned by
       # root), not into the repo workspace. Copy them in before commit.

@@ -108,6 +108,15 @@ Innovative **Senior Software Developer with 14+ years of experience** delivering
 <h3>💬 Language Breakdown</h3>
 <img src="./metrics/languages.svg" alt="In-depth language breakdown and starred topic icons" width="70%"/>
 
+<h3>⏱️ Coding Habits</h3>
+<img src="./metrics/habits.svg" alt="Coding habits — peak hours, active days, commit frequency" width="70%"/>
+
+<h3>🏃 Recent Activity</h3>
+<img src="./metrics/activity.svg" alt="Recent GitHub activity — commits, PRs, issues, reviews" width="70%"/>
+
+<h3>📏 Lines of Code</h3>
+<img src="./metrics/lines.svg" alt="Total lines of code added and removed across repositories" width="70%"/>
+
 <h3>🗓️ Contribution Calendar</h3>
 <img src="./metrics/calendar.svg" alt="Isometric full-year contribution calendar" width="100%"/>
 
