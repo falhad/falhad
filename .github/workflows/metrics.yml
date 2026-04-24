@@ -141,6 +141,6 @@ jobs:
             echo "No metrics changes to commit."
           else
             git commit -m "chore(metrics): refresh GitHub profile metrics"
-            git pull --rebase
+            git pull --rebase -X theirs
             git push
           fi
