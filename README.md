@@ -102,23 +102,40 @@ Innovative **Senior Software Developer with 14+ years of experience** delivering
 
 > Regenerated **every day at 00:00 UTC** by a [GitHub Action](.github/workflows/metrics.yml) using [`lowlighter/metrics`](https://github.com/lowlighter/metrics).
 
-<h3>📌 Profile Overview</h3>
-<img src="./metrics/overview.svg" alt="Profile overview" width="70%"/>
-
-<h3>💬 Language Breakdown</h3>
-<img src="./metrics/languages.svg" alt="In-depth language breakdown and starred topic icons" width="70%"/>
-
-<h3>⏱️ Coding Habits</h3>
-<img src="./metrics/habits.svg" alt="Coding habits — peak hours, active days, commit frequency" width="70%"/>
-
-<h3>🏃 Recent Activity</h3>
-<img src="./metrics/activity.svg" alt="Recent GitHub activity — commits, PRs, issues, reviews" width="70%"/>
-
-<h3>📏 Lines of Code</h3>
-<img src="./metrics/lines.svg" alt="Total lines of code added and removed across repositories" width="70%"/>
-
-<h3>🗓️ Contribution Calendar</h3>
-<img src="./metrics/calendar.svg" alt="Isometric full-year contribution calendar" width="100%"/>
+<table width="100%">
+  <tr>
+    <td colspan="2" align="center">
+      <b>📌 Profile Overview</b><br/><br/>
+      <img src="./metrics/overview.svg" alt="Profile overview" width="100%"/>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top" align="center">
+      <b>💬 Language Breakdown</b><br/><br/>
+      <img src="./metrics/languages.svg" alt="Language breakdown" width="100%"/>
+    </td>
+    <td width="50%" valign="top" align="center">
+      <b>⏱️ Coding Habits</b><br/><br/>
+      <img src="./metrics/habits.svg" alt="Coding habits" width="100%"/>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top" align="center">
+      <b>🏃 Recent Activity</b><br/><br/>
+      <img src="./metrics/activity.svg" alt="Recent activity" width="100%"/>
+    </td>
+    <td width="50%" valign="top" align="center">
+      <b>📏 Lines of Code</b><br/><br/>
+      <img src="./metrics/lines.svg" alt="Lines of code" width="100%"/>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center">
+      <b>🗓️ Contribution Calendar</b><br/><br/>
+      <img src="./metrics/calendar.svg" alt="Isometric full-year contribution calendar" width="100%"/>
+    </td>
+  </tr>
+</table>
 
 ---
 
