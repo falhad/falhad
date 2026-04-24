@@ -103,10 +103,10 @@ Innovative **Senior Software Developer with 14+ years of experience** delivering
 > Regenerated **every day at 00:00 UTC** by a [GitHub Action](.github/workflows/metrics.yml) using [`lowlighter/metrics`](https://github.com/lowlighter/metrics).
 
 <h3>📌 Profile Overview</h3>
-<img src="./metrics/overview.svg" alt="Profile overview" width="100%"/>
+<img src="./metrics/overview.svg" alt="Profile overview" width="85%"/>
 
 <h3>💬 Language Breakdown</h3>
-<img src="./metrics/languages.svg" alt="In-depth language breakdown and starred topic icons" width="100%"/>
+<img src="./metrics/languages.svg" alt="In-depth language breakdown and starred topic icons" width="85%"/>
 
 <h3 align="center">🗓️ Contribution Calendar</h3>
 <p align="center">
