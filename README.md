@@ -102,34 +102,15 @@ Innovative **Senior Software Developer with 14+ years of experience** delivering
 
 > Regenerated **every day at 00:00 UTC** by a [GitHub Action](.github/workflows/metrics.yml) using [`lowlighter/metrics`](https://github.com/lowlighter/metrics).
 
-<table>
-  <tr>
-    <td align="center" valign="top" width="50%">
-      <h3>📌 Profile Overview</h3>
-      <img src="./metrics/overview.svg" alt="Activity, community, repositories, follow-up ratio, lines of code, recent stars"/>
-    </td>
-    <td align="center" valign="top" width="50%">
-      <h3>💬 Language Breakdown</h3>
-      <img src="./metrics/languages.svg" alt="In-depth language breakdown and starred topic icons"/>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" valign="top" width="50%">
-      <h3>🌟 Notable Contributions</h3>
-      <img src="./metrics/notable.svg" alt="Commits, pull requests, and issues authored in other repositories"/>
-    </td>
-    <td align="center" valign="top" width="50%">
-      <h3>💡 Stack Overflow</h3>
-      <img src="./metrics/stackoverflow.svg" alt="Top Stack Overflow answers and questions"/>
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2" align="center" valign="top">
-      <h3>🎮 Steam</h3>
-      <img src="./metrics/steam.svg" alt="Steam player summary, most-played and recently-played games, and unlocked achievements"/>
-    </td>
-  </tr>
-</table>
+<div align="center">
+
+<h3>📌 Profile Overview</h3>
+<img src="./metrics/overview.svg" alt="Profile overview"/>
+
+<h3>💬 Language Breakdown</h3>
+<img src="./metrics/languages.svg" alt="In-depth language breakdown and starred topic icons"/>
+
+</div>
 
 <h3 align="center">🗓️ Contribution Calendar</h3>
 <p align="center">
