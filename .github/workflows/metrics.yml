@@ -119,22 +119,6 @@ jobs:
           output_action: none
 
       # ────────────────────────────────────────────────────────────────
-      # 6) Lines of code — total lines added and removed across repos.
-      # ────────────────────────────────────────────────────────────────
-      - name: Lines of code
-        uses: lowlighter/metrics@latest
-        with:
-          filename: metrics/lines.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          user: falhad
-          template: classic
-          base: repositories
-          config_timezone: Asia/Muscat
-          plugin_lines: yes
-          plugin_lines_sections: base
-          output_action: none
-
-      # ────────────────────────────────────────────────────────────────
       # With output_action: none, the metrics Docker container writes
       # the SVGs to /metrics_renders/ (a host-mounted volume owned by
       # root), not into the repo workspace. Copy them in before commit.

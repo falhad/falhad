@@ -104,29 +104,23 @@ Innovative **Senior Software Developer with 14+ years of experience** delivering
 
 <table width="100%">
   <tr>
-    <td colspan="2" align="center">
+    <td width="50%" valign="top" align="center">
       <b>📌 Profile Overview</b><br/><br/>
       <img src="./metrics/overview.svg" alt="Profile overview" width="100%"/>
     </td>
-  </tr>
-  <tr>
     <td width="50%" valign="top" align="center">
       <b>💬 Language Breakdown</b><br/><br/>
       <img src="./metrics/languages.svg" alt="Language breakdown" width="100%"/>
     </td>
+  </tr>
+  <tr>
     <td width="50%" valign="top" align="center">
       <b>⏱️ Coding Habits</b><br/><br/>
       <img src="./metrics/habits.svg" alt="Coding habits" width="100%"/>
     </td>
-  </tr>
-  <tr>
     <td width="50%" valign="top" align="center">
       <b>🏃 Recent Activity</b><br/><br/>
       <img src="./metrics/activity.svg" alt="Recent activity" width="100%"/>
-    </td>
-    <td width="50%" valign="top" align="center">
-      <b>📏 Lines of Code</b><br/><br/>
-      <img src="./metrics/lines.svg" alt="Lines of code" width="100%"/>
     </td>
   </tr>
   <tr>
