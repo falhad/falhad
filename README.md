@@ -12,10 +12,11 @@
 ### Senior Software Developer · 14+ Years · Oil & Gas · Distributed Systems · AI
 
 <p>
-  <a href="https://falhad.dev"><img src="https://img.shields.io/badge/falhad.dev-000000?style=for-the-badge&logo=firefox&logoColor=white" alt="Website"/></a>
+  <a href="https://farhad.work"><img src="https://img.shields.io/badge/farhad.work-000000?style=for-the-badge&logo=firefox&logoColor=white" alt="Website"/></a>
+  <a href="https://farhad.id"><img src="https://img.shields.io/badge/farhad.id-7aa2f7?style=for-the-badge&logo=gravatar&logoColor=white" alt="Contact"/></a>
   <a href="https://www.linkedin.com/in/farhadnava/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
   <a href="https://stackoverflow.com/users/3917083/farhad-navayazdan"><img src="https://img.shields.io/badge/Stack_Overflow-F58025?style=for-the-badge&logo=stackoverflow&logoColor=white" alt="Stack Overflow"/></a>
-  <a href="mailto:cs.arcxx@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
+  <a href="mailto:hi@farhad.work"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=maildotru&logoColor=white" alt="Email"/></a>
   <a href="https://www.google.com/maps/place/Muscat,+Oman"><img src="https://img.shields.io/badge/Muscat,%20Oman-0F9D58?style=for-the-badge&logo=googlemaps&logoColor=white" alt="Muscat, Oman"/></a>
   <img src="https://komarev.com/ghpvc/?username=falhad&style=for-the-badge&color=7aa2f7&label=PROFILE+VIEWS" alt="Profile views"/>
 </p>
@@ -150,8 +151,9 @@ If you're working on **backend engineering, distributed systems, oil & gas softw
 
 | | |
 |---|---|
-| 🌐 **Website**     | [falhad.dev](https://falhad.dev) |
-| 📫 **Email**       | [cs.arcxx@gmail.com](mailto:cs.arcxx@gmail.com) |
+| 🌐 **Website**     | [farhad.work](https://farhad.work) |
+| 🪪 **Contact**     | [farhad.id](https://farhad.id) |
+| 📫 **Email**       | [hi@farhad.work](mailto:hi@farhad.work) |
 | 💼 **LinkedIn**    | [linkedin.com/in/farhadnava](https://www.linkedin.com/in/farhadnava/) |
 | 🧵 **Stack Overflow** | [Farhad Navayazdan](https://stackoverflow.com/users/3917083/farhad-navayazdan) |
 
