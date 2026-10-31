@@ -66,7 +66,9 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           user: falhad
           template: classic
-          base: ""
+          # "repositories" is required: in-depth analysis iterates the repo
+          # list it loads, and with base: "" it sees 0 repositories.
+          base: repositories
           config_timezone: Asia/Muscat
           plugin_languages: yes
           plugin_languages_indepth: yes
@@ -74,7 +76,6 @@ jobs:
           plugin_languages_details: bytes-size, percentage
           plugin_languages_sections: most-used
           plugin_languages_analysis_timeout: 15
-          debug: yes
           plugin_topics: yes
           plugin_topics_mode: icons
           plugin_topics_limit: 30
