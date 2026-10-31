@@ -57,7 +57,10 @@ jobs:
           output_action: none
 
       # ────────────────────────────────────────────────────────────────
-      # 3) Language breakdown (in-depth) + starred topic icons.
+      # 3) Language breakdown + starred topic icons.
+      #    In-depth mode is off: it clones every repo and needs a token
+      #    with `repo` scope + org SSO, otherwise it finds nothing.
+      #    Non-in-depth mode reads the repo list loaded by base: repositories.
       # ────────────────────────────────────────────────────────────────
       - name: Language breakdown
         uses: lowlighter/metrics@latest
@@ -66,10 +69,10 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           user: falhad
           template: classic
-          base: ""
+          base: repositories
           config_timezone: Asia/Muscat
           plugin_languages: yes
-          plugin_languages_indepth: yes
+          plugin_languages_indepth: no
           plugin_languages_limit: 10
           plugin_languages_details: bytes-size, percentage
           plugin_languages_sections: most-used
