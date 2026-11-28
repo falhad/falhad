@@ -9,9 +9,10 @@
 
 # Farhad Navayazdan
 
-### Senior Software Developer · 14+ Years · Oil & Gas · Distributed Systems · AI
+### Senior Software Engineer in Muscat, Oman · 14+ Years · AI & LLM Integration · Real-time & Industrial Systems
 
 <p>
+  <a href="https://farh.ad"><img src="https://img.shields.io/badge/farh.ad-ff5a1f?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio"/></a>
   <a href="https://farhad.work"><img src="https://img.shields.io/badge/farhad.work-000000?style=for-the-badge&logo=firefox&logoColor=white" alt="Website"/></a>
   <a href="https://farhad.id"><img src="https://img.shields.io/badge/farhad.id-7aa2f7?style=for-the-badge&logo=gravatar&logoColor=white" alt="Contact"/></a>
   <a href="https://www.linkedin.com/in/farhadnava/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
@@ -27,7 +28,25 @@
 
 ## 👨‍💻 About
 
-Innovative **Senior Software Developer with 14+ years of experience** delivering high-impact, scalable software solutions — including specialized applications for the **oil and gas** sector. Adept at solving complex technical challenges, optimizing **system performance**, and leading projects from concept to deployment. Passionate about leveraging modern development techniques and technologies to drive efficiency and innovation in **industrial software systems**.
+**Senior Software Engineer in Muscat, Oman, with 14+ years of experience** and a background as a CTO. I translate business needs into software systems and own the work from requirements analysis and system design through implementation and delivery.
+
+- **AI and LLM integration** — assistants that answer from a company's own documents (RAG), AI agents, and LLM features inside existing software. → [AI integration in Oman](https://farh.ad/services/ai-integration-oman)
+- **Custom software** — web platforms, mobile apps and real-time systems with live video (WebRTC) and drilling telemetry (WITS) for the **oil and gas** sector. → [Software development in Oman](https://farh.ad/services/software-development-oman)
+- **Open to** contract projects and senior roles in Oman, and to remote work worldwide. → [Hire me](https://farh.ad/hire)
+
+### Products I built
+
+| Product | What it is |
+|---|---|
+| [aiassist.chat](https://farh.ad/work/aiassist-chat) | Multi-tenant AI assistant platform with RAG, vector search and an embeddable website widget. Founded, designed and built end to end. |
+| [ellix.ai](https://farh.ad/work/ellix-ai) | Generative-AI platform for LLM workflows and assistants. |
+| [Esbaar](https://farh.ad/work/esbaar) | Drone operations and live rig monitoring platforms for oil and gas operators in Oman. |
+| [Sipan](https://farh.ad/work/sipan) | Equipment inspection and lifecycle management for a national oil company. |
+| [Biratex](https://farh.ad/work/biratex) | Cryptocurrency exchange with Android and desktop apps. |
+| [QMenu](https://farh.ad/work/qmenu) | Digital restaurant menu app; QMenu is a partner of 14,000+ restaurants. |
+| [Parswater](https://farh.ad/work/parswater) | Blockchain platform for water-share tokenization. |
+
+All case studies: [farh.ad/work](https://farh.ad/work)
 
 > Pragmatic engineering. Clean architecture. Systems that hold up under production load.
 
@@ -147,10 +166,11 @@ Innovative **Senior Software Developer with 14+ years of experience** delivering
 
 ## 🤝 Let's Connect
 
-If you're working on **backend engineering, distributed systems, oil & gas software, or practical AI integration** — I'd love to hear from you.
+If you need a **software engineer in Oman**, or you're working on **AI and LLM integration, real-time systems, oil & gas software, or a product from zero to launch** — I'd love to hear from you.
 
 | | |
 |---|---|
+| 🌐 **Portfolio**   | [farh.ad](https://farh.ad) · [Services](https://farh.ad/services) · [Resume](https://farh.ad/resume) |
 | 🌐 **Website**     | [farhad.work](https://farhad.work) |
 | 🪪 **Contact**     | [farhad.id](https://farhad.id) |
 | 📫 **Email**       | [hi@farhad.work](mailto:hi@farhad.work) |
